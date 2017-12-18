@@ -105,8 +105,6 @@ Resources:
           # WorkingDirectory: String
   TargetGroup:
     Type: "AWS::ElasticLoadBalancingV2::TargetGroup"
-    DependsOn:
-      - LoadBalancer
     Properties:
       HealthCheckIntervalSeconds: 30
       HealthCheckPath: !Join

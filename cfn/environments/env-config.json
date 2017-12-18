@@ -4,7 +4,7 @@
         "Cluster": "us-east-1-dev-01-cluster",
         "DesiredCount": "1",
         "ExecutionRoleArn": "arn:aws:iam::047362787997:role/us-east-1-dev01-ecs-role",
-        "Image": {
+        "ImageUri": {
             "Fn::GetParam": [ "MyAppBuild", "build.json", "Image" ]
         },
         "ListenerArn": "arn:aws:elasticloadbalancing:us-east-1:047362787997:listener/app/us-east-1-dev01-lb/7723a463c9466a6a/e721c9c97677ea17",

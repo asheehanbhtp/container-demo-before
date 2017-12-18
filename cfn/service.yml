@@ -155,8 +155,8 @@ Resources:
         AwsvpcConfiguration:
           AssignPublicIp: ENABLED
           SecurityGroups:
-            - !Ref SecurityGroup
-          Subnets: !Ref SubnetIds
+            - !Ref SecurityGroups
+          Subnets: !Ref Subnets
       # PlacementConstraints:
       # - PlacementConstraints, ...
       # PlacementStrategies:
